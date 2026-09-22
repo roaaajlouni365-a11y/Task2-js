@@ -36,9 +36,7 @@ function showMenu() {
             continue;
         }
         console.log(
-            menu[i].name +
-            " - Price: " +
-            menu[i].price
+            menu[i].name +  " - Price: " +  menu[i].price
         );
     }
 }
@@ -73,9 +71,8 @@ document.write("Quantity: " + quantity + "<br>");
 document.write("Total Price: " + totalPrice);
 
 
-//task2
-
-// Q1
+//Ex : Function Task
+// Q1==>  Write a JavaScript function that reverses a number
 function reverseNumber(number) {
     let result = "";
     const text = String(number);
@@ -85,40 +82,31 @@ function reverseNumber(number) {
     return Number(result);
 }
 console.log(reverseNumber(532443));
-// Q2
+// Q2 ==>Use a loop that iterates from 0 to 15.
 for (let i = 0; i <= 15; i++) {
-
     if (i % 2 === 0) {
         console.log(i + " is even");
     } else {
         console.log(i + " is odd");
     }
 }
-// Q3
-const number = prompt("Enter a number:");
-
+// Q3 ==> accepts a number as input and inserts dashes (-) between each even number.
+let number = prompt("Enter a number:");
 let result = "";
-
 for (let i = 0; i < number.length; i++) {
     result += number[i];
-    if (
-        Number(number[i]) % 2 === 0 &&
-        Number(number[i + 1]) % 2 === 0
-    ) {
+    if ( Number(number[i]) % 2 === 0 && Number(number[i + 1]) % 2 === 0 ) {
         result += "-";
     }
 }
 console.log(result);
-// Q4
+// Q4 ==> Write a function called Agechecker that checks the user's age.
 function Agechecker(age) {
-
     if (age >= 18) {
         console.log("The user is Adult");
     } else {
         console.log("The user is Minor");
     }
 }
-
-const age = Number(prompt("Enter your age:"));
-
+let age = Number(prompt("Enter your age:"));
 Agechecker(age);
